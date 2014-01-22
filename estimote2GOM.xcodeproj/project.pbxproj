@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B2391391889D790001F33F1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B2391381889D790001F33F1 /* Settings.bundle */; };
+		3B682F0B188823B10092454E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B682F0A188823B10092454E /* Foundation.framework */; };
+		3B682F0D188823B10092454E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B682F0C188823B10092454E /* CoreGraphics.framework */; };
+		3B682F0F188823B10092454E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B682F0E188823B10092454E /* UIKit.framework */; };
+		3B682F15188823B10092454E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B682F13188823B10092454E /* InfoPlist.strings */; };
+		3B682F17188823B10092454E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B682F16188823B10092454E /* main.m */; };
+		3B682F1B188823B10092454E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B682F1A188823B10092454E /* AppDelegate.m */; };
+		3B682F1E188823B20092454E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B682F1C188823B20092454E /* Main_iPhone.storyboard */; };
+		3B682F21188823B20092454E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B682F1F188823B20092454E /* Main_iPad.storyboard */; };
+		3B682F24188823B20092454E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B682F23188823B20092454E /* ViewController.m */; };
+		3B682F26188823B20092454E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B682F25188823B20092454E /* Images.xcassets */; };
+		3B682F2D188823B20092454E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B682F2C188823B20092454E /* XCTest.framework */; };
+		3B682F2E188823B20092454E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B682F0A188823B10092454E /* Foundation.framework */; };
+		3B682F2F188823B20092454E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B682F0E188823B10092454E /* UIKit.framework */; };
+		3B682F37188823B20092454E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B682F35188823B20092454E /* InfoPlist.strings */; };
+		3B682F39188823B20092454E /* estimote2GOMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B682F38188823B20092454E /* estimote2GOMTests.m */; };
+		3BC994FF188863FE007268C9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC994FE188863FE007268C9 /* CoreBluetooth.framework */; };
+		3BC9950118886407007268C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC9950018886407007268C9 /* CoreLocation.framework */; };
+		924EF49FEC6449DAAEA48109 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE87DFCC5BC4CE5A1056EBA /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B682F30188823B20092454E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B682EFF188823B10092454E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B682F06188823B10092454E;
+			remoteInfo = estimote2GOM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B2391381889D790001F33F1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3B682F07188823B10092454E /* estimote2GOM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = estimote2GOM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B682F0A188823B10092454E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B682F0C188823B10092454E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3B682F0E188823B10092454E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3B682F12188823B10092454E /* estimote2GOM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "estimote2GOM-Info.plist"; sourceTree = "<group>"; };
+		3B682F14188823B10092454E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B682F16188823B10092454E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B682F18188823B10092454E /* estimote2GOM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "estimote2GOM-Prefix.pch"; sourceTree = "<group>"; };
+		3B682F19188823B10092454E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B682F1A188823B10092454E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B682F1D188823B20092454E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3B682F20188823B20092454E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3B682F22188823B20092454E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3B682F23188823B20092454E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B682F25188823B20092454E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3B682F2B188823B20092454E /* estimote2GOMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = estimote2GOMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B682F2C188823B20092454E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3B682F34188823B20092454E /* estimote2GOMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "estimote2GOMTests-Info.plist"; sourceTree = "<group>"; };
+		3B682F36188823B20092454E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B682F38188823B20092454E /* estimote2GOMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = estimote2GOMTests.m; sourceTree = "<group>"; };
+		3BC994FE188863FE007268C9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3BC9950018886407007268C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3DE87DFCC5BC4CE5A1056EBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CE1E6E9F2C4829ADA8E161 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B682F04188823B10092454E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC9950118886407007268C9 /* CoreLocation.framework in Frameworks */,
+				3BC994FF188863FE007268C9 /* CoreBluetooth.framework in Frameworks */,
+				3B682F0D188823B10092454E /* CoreGraphics.framework in Frameworks */,
+				3B682F0F188823B10092454E /* UIKit.framework in Frameworks */,
+				3B682F0B188823B10092454E /* Foundation.framework in Frameworks */,
+				924EF49FEC6449DAAEA48109 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B682F28188823B20092454E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B682F2D188823B20092454E /* XCTest.framework in Frameworks */,
+				3B682F2F188823B20092454E /* UIKit.framework in Frameworks */,
+				3B682F2E188823B20092454E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B682EFE188823B10092454E = {
+			isa = PBXGroup;
+			children = (
+				3B682F10188823B10092454E /* estimote2GOM */,
+				3B682F32188823B20092454E /* estimote2GOMTests */,
+				3B682F09188823B10092454E /* Frameworks */,
+				3B682F08188823B10092454E /* Products */,
+				C5CE1E6E9F2C4829ADA8E161 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		3B682F08188823B10092454E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B682F07188823B10092454E /* estimote2GOM.app */,
+				3B682F2B188823B20092454E /* estimote2GOMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B682F09188823B10092454E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BC9950018886407007268C9 /* CoreLocation.framework */,
+				3BC994FE188863FE007268C9 /* CoreBluetooth.framework */,
+				3B682F0A188823B10092454E /* Foundation.framework */,
+				3B682F0C188823B10092454E /* CoreGraphics.framework */,
+				3B682F0E188823B10092454E /* UIKit.framework */,
+				3B682F2C188823B20092454E /* XCTest.framework */,
+				3DE87DFCC5BC4CE5A1056EBA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B682F10188823B10092454E /* estimote2GOM */ = {
+			isa = PBXGroup;
+			children = (
+				3B682F19188823B10092454E /* AppDelegate.h */,
+				3B682F1A188823B10092454E /* AppDelegate.m */,
+				3B682F22188823B20092454E /* ViewController.h */,
+				3B682F23188823B20092454E /* ViewController.m */,
+				3B682F1C188823B20092454E /* Main_iPhone.storyboard */,
+				3B682F1F188823B20092454E /* Main_iPad.storyboard */,
+				3B682F25188823B20092454E /* Images.xcassets */,
+				3B682F11188823B10092454E /* Supporting Files */,
+				3B2391381889D790001F33F1 /* Settings.bundle */,
+			);
+			path = estimote2GOM;
+			sourceTree = "<group>";
+		};
+		3B682F11188823B10092454E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B682F12188823B10092454E /* estimote2GOM-Info.plist */,
+				3B682F13188823B10092454E /* InfoPlist.strings */,
+				3B682F16188823B10092454E /* main.m */,
+				3B682F18188823B10092454E /* estimote2GOM-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B682F32188823B20092454E /* estimote2GOMTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B682F38188823B20092454E /* estimote2GOMTests.m */,
+				3B682F33188823B20092454E /* Supporting Files */,
+			);
+			path = estimote2GOMTests;
+			sourceTree = "<group>";
+		};
+		3B682F33188823B20092454E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B682F34188823B20092454E /* estimote2GOMTests-Info.plist */,
+				3B682F35188823B20092454E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B682F06188823B10092454E /* estimote2GOM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B682F3C188823B20092454E /* Build configuration list for PBXNativeTarget "estimote2GOM" */;
+			buildPhases = (
+				AE81B09228EF4ABBB94AA943 /* Check Pods Manifest.lock */,
+				3B682F03188823B10092454E /* Sources */,
+				3B682F04188823B10092454E /* Frameworks */,
+				3B682F05188823B10092454E /* Resources */,
+				9AB5ED3F7B49485CA8FAF4F2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = estimote2GOM;
+			productName = estimote2GOM;
+			productReference = 3B682F07188823B10092454E /* estimote2GOM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B682F2A188823B20092454E /* estimote2GOMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B682F3F188823B20092454E /* Build configuration list for PBXNativeTarget "estimote2GOMTests" */;
+			buildPhases = (
+				3B682F27188823B20092454E /* Sources */,
+				3B682F28188823B20092454E /* Frameworks */,
+				3B682F29188823B20092454E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B682F31188823B20092454E /* PBXTargetDependency */,
+			);
+			name = estimote2GOMTests;
+			productName = estimote2GOMTests;
+			productReference = 3B682F2B188823B20092454E /* estimote2GOMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B682EFF188823B10092454E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "ART+COM AG";
+				TargetAttributes = {
+					3B682F2A188823B20092454E = {
+						TestTargetID = 3B682F06188823B10092454E;
+					};
+				};
+			};
+			buildConfigurationList = 3B682F02188823B10092454E /* Build configuration list for PBXProject "estimote2GOM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B682EFE188823B10092454E;
+			productRefGroup = 3B682F08188823B10092454E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B682F06188823B10092454E /* estimote2GOM */,
+				3B682F2A188823B20092454E /* estimote2GOMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B682F05188823B10092454E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B682F21188823B20092454E /* Main_iPad.storyboard in Resources */,
+				3B682F26188823B20092454E /* Images.xcassets in Resources */,
+				3B2391391889D790001F33F1 /* Settings.bundle in Resources */,
+				3B682F1E188823B20092454E /* Main_iPhone.storyboard in Resources */,
+				3B682F15188823B10092454E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B682F29188823B20092454E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B682F37188823B20092454E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AB5ED3F7B49485CA8FAF4F2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE81B09228EF4ABBB94AA943 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B682F03188823B10092454E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B682F24188823B20092454E /* ViewController.m in Sources */,
+				3B682F1B188823B10092454E /* AppDelegate.m in Sources */,
+				3B682F17188823B10092454E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B682F27188823B20092454E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B682F39188823B20092454E /* estimote2GOMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B682F31188823B20092454E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B682F06188823B10092454E /* estimote2GOM */;
+			targetProxy = 3B682F30188823B20092454E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B682F13188823B10092454E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B682F14188823B10092454E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3B682F1C188823B20092454E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B682F1D188823B20092454E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3B682F1F188823B20092454E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B682F20188823B20092454E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3B682F35188823B20092454E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B682F36188823B20092454E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B682F3A188823B20092454E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B682F3B188823B20092454E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B682F3D188823B20092454E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CE1E6E9F2C4829ADA8E161 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "estimote2GOM/estimote2GOM-Prefix.pch";
+				INFOPLIST_FILE = "estimote2GOM/estimote2GOM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3B682F3E188823B20092454E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CE1E6E9F2C4829ADA8E161 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "estimote2GOM/estimote2GOM-Prefix.pch";
+				INFOPLIST_FILE = "estimote2GOM/estimote2GOM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3B682F40188823B20092454E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/estimote2GOM.app/estimote2GOM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "estimote2GOM/estimote2GOM-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "estimote2GOMTests/estimote2GOMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3B682F41188823B20092454E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/estimote2GOM.app/estimote2GOM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "estimote2GOM/estimote2GOM-Prefix.pch";
+				INFOPLIST_FILE = "estimote2GOMTests/estimote2GOMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B682F02188823B10092454E /* Build configuration list for PBXProject "estimote2GOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B682F3A188823B20092454E /* Debug */,
+				3B682F3B188823B20092454E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B682F3C188823B20092454E /* Build configuration list for PBXNativeTarget "estimote2GOM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B682F3D188823B20092454E /* Debug */,
+				3B682F3E188823B20092454E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B682F3F188823B20092454E /* Build configuration list for PBXNativeTarget "estimote2GOMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B682F40188823B20092454E /* Debug */,
+				3B682F41188823B20092454E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B682EFF188823B10092454E /* Project object */;
+}
