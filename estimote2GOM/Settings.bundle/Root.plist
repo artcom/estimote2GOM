@@ -28,30 +28,6 @@
                 <key>Type</key>
                 <string>PSTextFieldSpecifier</string>
             </dict>
-            <dict>
-                <key>Title</key>
-                <string>Estimote iBeacon UUID</string>
-                <key>Type</key>
-                <string>PSGroupSpecifier</string>
-            </dict>
-            <dict>
-                <key>AutocapitalizationType</key>
-                <string>None</string>
-                <key>AutocorrectionType</key>
-                <string>No</string>
-                <key>DefaultValue</key>
-                <string></string>
-                <key>IsSecure</key>
-                <false/>
-                <key>Key</key>
-                <string>estimote_ibeacon_uuid_preference</string>
-                <key>KeyboardType</key>
-                <string>Alphabet</string>
-                <key>Title</key>
-                <string></string>
-                <key>Type</key>
-                <string>PSTextFieldSpecifier</string>
-            </dict>
         </array>
         <key>StringsTable</key>
         <string>Root</string>
