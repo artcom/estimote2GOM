@@ -22,6 +22,10 @@ NSString* const BEACON_PROXIMITY_UUID = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
 @property (nonatomic, strong) NSArray *supportedProximityUUIDs;
 @property (nonatomic, strong) NSDictionary *model;
 
+- (void)writeToConsole:(NSString *)message;
+- (void)updateColorForBeacon:(CLBeacon *)beacon;
+- (void)writeBeaconDataToGOM:(CLBeacon *)beacon;
+
 @end
 
 @implementation ViewController
@@ -97,47 +101,6 @@ NSString* const BEACON_PROXIMITY_UUID = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
     [self.consoleView scrollRangeToVisible:range];
 }
 
-#pragma mark - CLLocationManagerDelegate
-
-- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
-{
-    NSLog(@"didEnterRegion: %@", region.identifier);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
-{
-    NSLog(@"didExitRegion: %@", region.identifier);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region
-{
-    NSLog(@"didStartMonitoringForRegion: %@", region.identifier);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    NSLog(@"CLLocationManager didFailWithError: %@", error.userInfo);
-}
-
-- (void)locationManager:(CLLocationManager *)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region withError:(NSError *)error
-{
-    NSLog(@"rangingBeaconsDidFailForRegion: %@ \n %@", region.identifier, error.userInfo);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
-{
-    NSArray *immediateBeacons = [beacons filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"proximity = %d", CLProximityImmediate]];
-    if ([immediateBeacons count]) {
-        NSLog(@"immediate beacons: %@", immediateBeacons.description);
-        
-        [self updateColorForBeacon:immediateBeacons[0]];
-        [self writeBeaconDataToGOM:immediateBeacons[0]];
-    } else {
-        [self updateColorForBeacon:nil];
-        [self writeBeaconDataToGOM:nil];
-    }
-}
-
 - (void)updateColorForBeacon:(CLBeacon *)beacon
 {
     if (beacon) {
@@ -182,6 +145,46 @@ NSString* const BEACON_PROXIMITY_UUID = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
     }
 }
 
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
+{
+    NSLog(@"didEnterRegion: %@", region.identifier);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
+{
+    NSLog(@"didExitRegion: %@", region.identifier);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region
+{
+    NSLog(@"didStartMonitoringForRegion: %@", region.identifier);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"CLLocationManager didFailWithError: %@", error.userInfo);
+}
+
+- (void)locationManager:(CLLocationManager *)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region withError:(NSError *)error
+{
+    NSLog(@"rangingBeaconsDidFailForRegion: %@ \n %@", region.identifier, error.userInfo);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
+{
+    NSArray *immediateBeacons = [beacons filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"proximity = %d", CLProximityImmediate]];
+    if ([immediateBeacons count]) {
+        NSLog(@"immediate beacons: %@", immediateBeacons.description);
+        
+        [self updateColorForBeacon:immediateBeacons[0]];
+        [self writeBeaconDataToGOM:immediateBeacons[0]];
+    } else {
+        [self updateColorForBeacon:nil];
+        [self writeBeaconDataToGOM:nil];
+    }
+}
 
 #pragma  mark - GOMClientDelegate
 
