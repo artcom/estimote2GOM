@@ -15,7 +15,7 @@
 /testing/beacons/immediate:minor
 ```
 
-# Values currently read from GOM
+## Values currently read from GOM
 
 ```
 /tests/beacons/regions/[UUID]/[major]/[minor]:color = "0.5, 0.3, 0.2, 0.1" (RGBA as float values)
